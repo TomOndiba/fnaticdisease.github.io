@@ -1,0 +1,166 @@
+section.social
+    margin:0
+    padding:0
+    
+    
+    .home-lead
+        text-align:center
+        color:white
+        font-size:28px
+        
+    .home-cta
+        font-size:24px
+        
+        
+    .col-1
+       
+        max-width:400px
+        
+        
+    
+        .design-img-link
+            display:block
+            float:left
+            width:100%
+            height:200px
+            box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.7)
+            margin:25px 0px
+            opacity:0.7
+            
+            
+            .box
+                width:100%
+                height:200px
+                display:flex
+                flex-direction: column
+               
+                
+                           
+                    
+                .thumb
+                    display:flex
+                    flex-direction: row
+                    justify-content: space-between
+                    height:40%
+                   
+                    .col-20
+                        max-width:20%
+                        height:100%
+                        
+                        img
+                            +size(75px)
+                            border-radius: 50%  
+                            +transition(all ease-in-out 300ms)
+                           
+                            
+                        
+                            &:hover
+                                transform:scale(0.9)
+                            
+                    .col-80
+                        max-width:80%
+                        height:100%
+                        display:flex
+                        flex-direction:row
+                        justify-content: center
+                        margin:0 0 0 20px
+                        align-items: center
+                        
+                        
+                        
+                        
+                        
+                        .like,.comment,.share
+                            padding:0
+                            font-size: 20px
+                            color:rgba(0, 0, 0, 0.53)
+                            font-weight: bolder
+                            margin-right:10px
+                            +transition(all 300ms ease-in-out)
+                            &:hover
+                                color:black
+                            
+                        .retweet,.reply,.favorite
+                            padding:0
+                            font-size: 20px
+                            color:rgba(0, 0, 0, 0.53)
+                            font-weight: bolder
+                            margin-right:20px
+                            +transition(all 300ms ease-in-out)
+                            &:hover
+                                color:black
+                            
+                                   
+                    @media (max-width:640px)
+                        .col-80
+                            margin:0 0 0 30px
+                            .like,.comment,.share,.retweet,.reply,.favorite
+                                font-size: 16px
+
+      
+                 
+                
+                .message
+                    height:60%
+                    background:black
+                    
+                    
+                    p
+                        color:white
+                        padding:20px 15px
+                        font-size: 16px
+                        font-style: italic
+                        
+               
+                                
+
+
+            
+               
+        .cf
+            +clearfix()
+            margin-bottom:20px
+    
+
+    .facebook
+
+        background:
+            image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjM1MCIgaGVpZ2h0PSI0NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9IiMzYjU5OTgiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0NTIiIHdpZHRoPSIzNTIiIHk9Ii0xIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIHN0cm9rZT0ibnVsbCIgb3BhY2l0eT0iMC4yNSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtZGFzaGFycmF5PSI1LDIsMiwyIiBpZD0ic3ZnXzEiIGQ9Im0yMjUuMDAwNDg4LDEzOS4yNTQ4MjJsMCwyNy42MDU3NzRsLTE4LjE2OTg2MSwwcS05Ljk1NTI5MiwwIC0xMy40MjU1NTIsMy43NjQ0MDR0LTMuNDczOTk5LDExLjI5MzI3NGwwLDE5Ljc2MjM5bDMzLjkxMDE4NywwbC00LjUxNDY5NCwzMC45NTE5MDRsLTI5LjM5OTE3LDBsMCw3OS4zNjc0MDFsLTM1LjQxMzg3OSwwbDAsLTc5LjM2NzQwMWwtMjkuNTE0MDA4LDBsMCwtMzAuOTUxOTA0bDI5LjUxNDAwOCwwbDAsLTIyLjc5NDAwNnEwLC0xOS40NTExNzIgMTIuMDM2NzEzLC0zMC4xNjg5MTV0MzIuMDU4MzgsLTEwLjcxNzcxMnExNy4wMTQzNzQsMCAyNi4zODgxODQsMS4yNTQ3OTFsMC4wMDM2OTMsMHoiIGZpbGw9IiNmZmZmZmYiLz4KIDwvZz4KPC9zdmc+")
+            size:cover
+            position:center center
+            repeat:no-repeat
+            
+        padding:50px 0
+        +transition(0.3s ease-in-out)
+       
+        
+        
+            
+    
+        .home-cta
+            color:#3b5998
+            
+       
+            
+    .twitter
+        background:
+            image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9IiM0MDk5ZmYiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0NTIiIHdpZHRoPSIzMDIiIHk9Ii0xIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIHN0cm9rZT0ibnVsbCIgb3BhY2l0eT0iMC40NSIgaWQ9InN2Z18xIiBkPSJtMTgzLjY2NjY3MiwyMjUuMDAwMDE1bC01MC41LDBsMCwxNi44MzMzNDRjMCw5LjI5NjE4OCA3LjUzNzEyNSwxNi44MzMzMjggMTYuODMzMzI4LDE2LjgzMzMyOGwzMy42NjY2NzIsMGM5LjI5NjIwNCwwIDE2LjgzMzMyOCw3LjUzNzEwOSAxNi44MzMzMjgsMTYuODMzMzEzcy03LjUzNzEyNSwxNi44MzMzMTMgLTE2LjgzMzMyOCwxNi44MzMzMTNsLTMzLjY2NjY3MiwwYy0yNy44ODg2MjYsMCAtNTAuNSwtMjIuNjExMzU5IC01MC41LC01MC40OTk5NTRsMCwtNjcuMzMzMzU5YzAsLTkuMjk2MjA0IDcuNTM3MTI1LC0xNi44MzMzMjggMTYuODMzMzI4LC0xNi44MzMzMjhzMTYuODMzMzQ0LDcuNTM3MTI1IDE2LjgzMzM0NCwxNi44MzMzMjhsMCwxNi44MzMzNDRsNTAuNSwwYzkuMjk2MjA0LDAgMTYuODMzMzI4LDcuNTM3MTQgMTYuODMzMzI4LDE2LjgzMzMyOHMtNy41MzcxMjUsMTYuODMzMzQ0IC0xNi44MzMzMjgsMTYuODMzMzQ0eiIgZmlsbD0iI2ZmZmZmZiIvPgogPC9nPgo8L3N2Zz4=")
+            size:cover
+            position:center center
+            repeat:no-repeat
+        padding:50px 0
+        +transition(0.3s ease-in-out)
+        
+        &:hover
+            transform: scale(1)
+        
+        .home-cta
+            color:#4099FF
+            
+                                                                                                 
+        
+        
+        
+        
+   
+            

@@ -1,0 +1,19 @@
+mixin nav-content()
+    ul
+        li: a(href="#about") About
+        li: a(href="#9gag") 9GAG
+        li: a(href="#social") Social
+        li: a(href="#artwork") Artwork
+        li: a(href="#blog") Blog 
+        li: a(href="#contact") Contact
+.mobile-nav
+    +nav-content()
+header.main
+    .header-position
+        .logo
+        nav.site-nav 
+            +nav-content()
+        a(href="mailto:petruradulescu.v@gmail.com").email-link +email-me
+        .mobile-nav-toggle
+            span
+        

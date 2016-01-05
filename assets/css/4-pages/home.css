@@ -1,0 +1,89 @@
+/* line 1, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 4, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.home-wrap {
+  display: flex;
+  min-height: 100vh;
+  background: #ccc;
+  width: 100%; }
+  @media (max-width: 775px) {
+    /* line 4, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+    .home-wrap {
+      display: block; } }
+
+/* line 16, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.home-sections {
+  flex: 1; }
+  /* line 19, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections section {
+    padding: 50px 0; }
+  /* line 26, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections .flex {
+    display: flex;
+    flex-direction: row; }
+  /* line 29, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections .flex--center {
+    justify-content: center; }
+  /* line 32, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections .flex--space-around {
+    justify-content: space-around; }
+  /* line 35, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections .order-first {
+    order: -1; }
+  /* line 37, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections .flex--column {
+    display: flex;
+    flex-direction: column; }
+
+/* line 46, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.col-1 {
+  max-width: 300px;
+  margin: 0 10px; }
+
+/* line 51, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.col-2 {
+  max-width: 620px;
+  margin: 0 10px; }
+
+/* line 56, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.col-50 {
+  width: 50%; }
+
+/* line 58, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.row-50 {
+  height: 50%; }
+
+/* line 62, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.push-right {
+  margin-left: 330px; }
+
+/* line 68, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+.home-lead {
+  font-size: 36px;
+  line-height: 1; }
+  /* line 72, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-lead.outdented {
+    text-indent: -0.7em; }
+    @media (max-width: 640px) {
+      /* line 72, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+      .home-lead.outdented {
+        text-indent: 0; } }
+
+@media (max-width: 640px) {
+  /* line 82, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+  .home-sections .flex {
+    display: block; }
+    /* line 85, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+    .home-sections .flex .col-1 {
+      max-width: 97%; }
+    /* line 88, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+    .home-sections .flex .col-50 {
+      width: auto; }
+    /* line 90, K:/Petrut/blog-devtips/assets/css/4-pages/home.sass */
+    .home-sections .flex .push-right {
+      margin-left: 10px; } }
+
+/*# sourceMappingURL=home.css.map */

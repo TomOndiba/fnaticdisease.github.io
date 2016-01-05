@@ -1,0 +1,91 @@
+body
+    margin:0
+    padding:0
+.home-wrap
+    display:flex
+    min-height:100vh
+    background:#ccc
+    width:100%
+    
+    
+    
+    
+    @media (max-width:775px)
+        display:block
+        
+.home-sections
+    flex:1
+    
+    section
+        padding:50px 0
+        
+        
+        
+    //FLEX-sections 
+    
+    .flex
+        display:flex
+        flex-direction:row
+    .flex--center
+        justify-content:center
+    
+    .flex--space-around
+        justify-content:space-around
+        
+    .order-first
+        order:-1
+    .flex--column
+        display:flex
+        flex-direction: column
+    
+    
+    
+
+//columns
+
+.col-1
+    max-width:300px
+    margin:0 10px
+   
+
+.col-2
+    max-width:620px
+    margin:0 10px
+    
+
+.col-50
+    width:50%
+.row-50
+    height:50%
+    
+
+.push-right
+    margin-left:330px
+    
+    
+// typography
+
+.home-lead
+    font-size:36px
+    line-height:1
+    
+    &.outdented
+        text-indent:-0.7em
+        
+        @media (max-width:640px)
+            text-indent:0
+    
+    
+    
+    
+@media(max-width:640px)
+    .home-sections .flex
+        display:block
+        
+        .col-1
+            max-width:97%
+            
+        .col-50
+            width:auto
+        .push-right
+            margin-left:10px

@@ -1,0 +1,63 @@
+mixin design-img-facebook(link,img,mesaj) 
+    a(href="#{link}").design-img-link
+        .box
+            .row-1.thumb
+                .col-20
+                    img(src="assets/img/social/#{img}")
+                .col-80
+                    p.like 👍 Like
+                    p.share ☈ Share
+                    p.comment ⌨ Comment
+
+                
+            .row-1.message
+                p #{mesaj}
+            
+            
+                
+                
+mixin design-img-twitter(link,img,mesaj)
+    a(href="#{link}").design-img-link
+        .box
+            .row-1.thumb
+                .col-20
+                    img(src="assets/img/social/#{img}")
+                .col-80
+                    p.reply ↺ Reply
+                    p.retweet  ⇄ Retweet
+                    p.favorite ❤ Like
+
+                
+            .row-1.message
+                p #{mesaj}
+
+
+section.social#social
+    .flex.flex--center
+        .col-50.flex.flex--center.facebook
+            
+            .col-1
+                
+                p.home-lead ...being active on Facebook...
+                +design-img-facebook("https://www.facebook.com/","facebook1.jpg","Surround yourself with the dreamers and the doers, the believers and the thinkers.")
+                +design-img-facebook("https://www.facebook.com/","facebook2.png","Hangover cures from Reddit. You're welcome.")
+                +design-img-facebook("https://www.facebook.com/","facebook3.png","Listening to music is one of the few activities that uses the entierly of the human brain")
+                
+                
+                 
+                .cf    
+                
+                a(href="").home-cta Facebook
+                
+     
+        .col-50.flex.flex--center.twitter
+            .col-1
+                p.home-lead ...and Twitter...
+                +design-img-twitter("https://twitter.com/","tweet1.jpg","Help Beethoven arrange his masterpieces in today`s #GoogleDoodle")
+                +design-img-twitter("https://twitter.com/","tweet2.png","Reviewing last year's devtips annual report. Getting ready to make goals for 2016")
+                +design-img-twitter("https://twitter.com/","tweet3.png","Do you meditate? It's not as hard as you might think. This week we talk about the value of reflection")
+                
+                .cf
+                a(href="").home-cta Twitter
+                
+    
